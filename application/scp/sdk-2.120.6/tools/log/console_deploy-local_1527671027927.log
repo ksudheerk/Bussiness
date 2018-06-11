@@ -1,0 +1,6 @@
+2018-05-30 14:33:49,914 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Arguments:   --source C:\Users\sudheer.c\eclipse-workspace\firstapp\application\target/firstapp-application.war
+2018-05-30 14:33:53,489 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Starting execution of command [deploy-local]
+2018-05-30 14:33:53,496 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [deploy-local] init() finished for [6] ms
+2018-05-30 14:33:54,797 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [deploy-local] run() finished for [1300] ms
+2018-05-30 14:33:54,798 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [deploy-local] cleanup() finished for [0] ms
+2018-05-30 14:33:54,798 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [deploy-local] finished successfully for [1308] ms

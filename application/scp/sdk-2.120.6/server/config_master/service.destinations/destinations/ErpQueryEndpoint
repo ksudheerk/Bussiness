@@ -1,0 +1,8 @@
+#Wed May 30 14:33:16 IST 2018
+URL=https\://34.202.78.88\:44300
+Name=ErpQueryEndpoint
+TrustAll=FALSE
+Type=HTTP
+Password=india123
+Authentication=BasicAuthentication
+User=ksudheer

@@ -1,0 +1,6 @@
+2018-05-30 14:31:57,376 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Arguments:   
+2018-05-30 14:31:59,519 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Starting execution of command [install-local]
+2018-05-30 14:31:59,520 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [install-local] init() finished for [0] ms
+2018-05-30 14:32:36,875 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [install-local] run() finished for [37354] ms
+2018-05-30 14:32:36,876 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [install-local] cleanup() finished for [0] ms
+2018-05-30 14:32:36,876 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [install-local] finished successfully for [37356] ms

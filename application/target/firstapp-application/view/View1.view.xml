@@ -1,0 +1,66 @@
+<mvc:View controllerName="sdk.sdk-tutorial-frontend.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+		  <Page title="Business Partner Explorer">
+				<content>
+		<Table id="idProductsTable"
+		inset="false"
+		items="{businessPartner>/}">
+		<headerToolbar>
+			<Toolbar>
+				<Title text="Business Partners" level="H2"/>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column
+				width="12em">
+				<Text text="Business Partner" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet">
+				<Text text="Creation Date" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet">
+				<Text text="FirstName" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet">
+				<Text text="Last Name" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet">
+				<Text text="Is Female" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet">
+				<Text text="Is Male" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					
+					<Text
+						text="{businessPartner>BusinessPartner}" />
+					<Text
+						text="{businessPartner>CreationDate}" />
+					<Text
+						text="{businessPartner>FirstName}" />
+					<Text
+						text="{businessPartner>LastName}" />
+					<Text
+						text="{businessPartner>IsFemale}" />
+					<Text
+						text="{businessPartner>IsMale}" />
+				
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

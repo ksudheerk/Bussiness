@@ -1,0 +1,103 @@
+FILE_TYPE:DAAA96DE-B0FB-4c6e-AF7B-A445F5BF9BE2
+FILE_ID:1527671014073
+ENCODING:[UTF8|NWCJS:ASCII]
+RECORD_SEPARATOR:124
+COLUMN_SEPARATOR:35
+ESC_CHARACTER:92
+COLUMNS:Time|TZone|Severity|Logger|ACH|User|Thread|Bundle name|JPSpace|JPAppliance|JPComponent|Tenant Alias|DSR Root Context ID|DSR Transaction|DSR Connection|DSR Counter|Text|
+SEVERITY_MAP:FINEST|Information|FINER|Information|FINE|Information|CONFIG|Information|DEBUG|Information|PATH|Information|INFO|Information|WARNING|Warning|ERROR|Error|SEVERE|Error|FATAL|Error
+HEADER_END
+
+
+2018 05 30 14:33:45#+0530#ERROR#org.apache.coyote.http11.Http11Protocol##anonymous#Start Level Event Dispatcher#na#N/A#N/A#N/A##na#na#na#na#Failed to initialize end point associated with ProtocolHandler ["http-bio-8080"]java.net.BindException: Address already in use: JVM_Bind <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:413)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:728)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:452)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:560)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:840)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.eclipse.gemini.web.tomcat.internal.OsgiAwareEmbeddedTomcat.init(OsgiAwareEmbeddedTomcat.java:197)
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainer.<init>(TomcatServletContainer.java:62)
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainerFactory.createContainer(TomcatServletContainerFactory.java:29)
+	at org.eclipse.gemini.web.tomcat.internal.Activator.createContainer(Activator.java:107)
+	at org.eclipse.gemini.web.tomcat.internal.Activator.start(Activator.java:58)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:400)
+	... 29 common frames omitted
+|
+2018 05 30 14:33:45#+0530#ERROR#org.apache.catalina.core.StandardService##anonymous#Start Level Event Dispatcher#na#N/A#N/A#N/A##na#na#na#na#Failed to initialize connector [Connector[HTTP/1.1-8080]]org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:560)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:840)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.eclipse.gemini.web.tomcat.internal.OsgiAwareEmbeddedTomcat.init(OsgiAwareEmbeddedTomcat.java:197)
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainer.<init>(TomcatServletContainer.java:62)
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainerFactory.createContainer(TomcatServletContainerFactory.java:29)
+	at org.eclipse.gemini.web.tomcat.internal.Activator.createContainer(Activator.java:107)
+	at org.eclipse.gemini.web.tomcat.internal.Activator.start(Activator.java:58)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 24 common frames omitted
+Caused by: java.net.BindException: Address already in use: JVM_Bind <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:413)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:728)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:452)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	... 25 common frames omitted
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:400)
+	... 29 common frames omitted
+|

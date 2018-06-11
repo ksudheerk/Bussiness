@@ -1,0 +1,6 @@
+2018-05-30 14:33:18,297 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Arguments:   --shutdown-port 8003
+2018-05-30 14:33:19,909 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Starting execution of command [start-local]
+2018-05-30 14:33:19,932 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [start-local] init() finished for [20] ms
+2018-05-30 14:33:45,311 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [start-local] run() finished for [25378] ms
+2018-05-30 14:33:45,311 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [start-local] cleanup() finished for [0] ms
+2018-05-30 14:33:45,311 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [start-local] finished successfully for [25399] ms
